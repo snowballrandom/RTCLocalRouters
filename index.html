@@ -1,0 +1,18 @@
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<div class="panel panel-default">
+
+    <div class="panel-heading">Detected Devices
+
+    <span class="pull-right">
+    <a onclick="localStorage.removeItem('detected');window.location.reload();" href="#">Retry</a>
+    </span>
+    </div>
+
+    <div class="panel-body" id="detectBody"></div>
+    <ul class="list-group" id="detectPanel">
+    <li class="list-group-item" id="detectSpin"><span class="fa fa-refresh fa-spin"></span> Detecting Routers</li>
+    </ul>
+</div>
+
+<script src="./rtc.js"></script>
